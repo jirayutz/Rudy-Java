@@ -34,13 +34,13 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            Toast.makeText(LoginActivity.this,"Login is SucessFull",Toast.LENGTH_LONG).show();
+                            Toast.makeText(LoginActivity.this,"เข้าสู่ระบบสำเร็จ",Toast.LENGTH_LONG).show();
                             String uid = FirebaseAuth.getInstance().getUid();
                             Intent login = new Intent(LoginActivity.this,HomeActivity.class);
                             login.putExtra("UserUid",uid);
                             startActivity(login);
                         }else {
-                            Toast.makeText(LoginActivity.this,"Login is UnsucessFull",Toast.LENGTH_LONG).show();
+                            Toast.makeText(LoginActivity.this,"เข้าสู่ระบบไม่สำเร็จ",Toast.LENGTH_LONG).show();
                         }
                     }
                 });

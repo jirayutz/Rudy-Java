@@ -9,20 +9,48 @@
     tools:context=".HomeActivity">
 
     <TextView
-        android:id="@+id/tvShow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Hello World !!"
-        android:textSize="62dp" />
-
-    <Button
-        android:id="@+id/btnOK"
+        android:id="@+id/tvShowbrand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
-        android:text="OK" />
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="แสดงข้อมูล : "
+        android:textColor="@color/colorWhite"
+        android:textSize="42dp" />
+
+    <EditText
+
+        android:id="@+id/edtinputband"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="โปรดกรอกข้อมูล"
+        android:paddingStart="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="บันทึก"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
+
